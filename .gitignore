@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# IDEs and editors
+.vscode/
+.idea/
+.vs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Model files (large binaries)
+*.h5
+*.hdf5
+*.pth
+*.ckpt
+
+# Dataset (if you prefer not to add raw data to git)
+/dataset/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python testing
+.pytest_cache/
+
+# Misc
+*.zip
+*.tar.gz
