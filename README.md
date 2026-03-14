@@ -16,7 +16,10 @@ Brain Tumor Detection using MRI is a concise, production-ready pipeline for clas
 - `dataset/` — expected layout:
   - `Training/` with class subfolders
   - `Testing/` with class subfolders
+  - Download Dataset
+  - https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/data
 
+You can download the dataset directly from Kaggle:
 **Requirements (suggested)**
 - Python 3.8+
 - TensorFlow / Keras
@@ -80,6 +83,15 @@ python gui.py
 
 **Contributing**
 - Open an issue to discuss features or file a PR with small, focused changes.
+| Name                  | Roll No. | Contribution                                                                                                                                                          |
+| --------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Aryan Yadav**       | 2305525  |  Developed the CNN model architecture, implemented the **training pipeline (`train.py`)**, handled backend ML logic, and integrated the complete system. |
+| **Sansthita Dey**     | 2305564  | Worked on **dataset preprocessing, data organization, and backend support for model training and testing**. Assisted with experimental evaluation.                    |
+| **Ishan Sinha**       | 2305542  | Implemented **evaluation and prediction modules (`evaluate.py`, `predict.py`)**, worked on performance metrics and experimental result analysis.                      |
+| **Shayank Gupta**  | 2305569 | Developed the **frontend GUI (`gui.py`)** for uploading MRI images and displaying tumor predictions.                                                                  |
+| **Adyasha Pattanaik**     | 2305590  | Responsible for **project documentation and report preparation**, including methodology description, diagrams, and formatting of the final research report.           |
+                 |
+
 
 **Author / Contact**
 - Aryan Yadav — aryankyadav5579@gmail.com
