@@ -1,140 +1,77 @@
-🧠 Brain Tumor Detection using MRI
+# Brain Tumor Detection using MRI
 
-Brain Tumor Detection using MRI is a deep learning project that classifies brain MRI scans into four categories using a Convolutional Neural Network (CNN):
+Brain Tumor Detection using MRI is a concise, production-ready pipeline for classifying brain MRI scans into the classes: `glioma`, `meningioma`, `pituitary`, and `notumor` using a convolutional neural network.
 
-Glioma Tumor
+**Highlights**
+- Trains and exports a Keras model (brain_tumor_model.h5).
+- Scripts for training, evaluation, single-image prediction, and a small GUI.
+- Opinionated, reproducible project layout for experiments and demos.
 
-Meningioma Tumor
+**Project Structure**
+- `train.py` — training entrypoint. Adjust hyperparameters inside or via CLI.
+- `evaluate.py` — runs evaluation on the test set and prints metrics.
+- `predict.py` — single-image prediction script (CLI).
+- `gui.py` — a minimal GUI for loading an image and viewing predictions.
+- `brain_tumor_model.h5` — trained model (ignored by `.gitignore` by default).
+- `dataset/` — expected layout:
+  - `Training/` with class subfolders
+  - `Testing/` with class subfolders
 
-Pituitary Tumor
+**Requirements (suggested)**
+- Python 3.8+
+- TensorFlow / Keras
+- numpy, pandas
+- scikit-learn
+- opencv-python or Pillow
+- matplotlib
 
-No Tumor
+Create a virtual environment and install the essentials:
 
-The project includes scripts for training, evaluation, prediction, and a simple GUI interface.
-
-🚀 Features
-
-Train a CNN model using TensorFlow / Keras
-
-Export trained model as brain_tumor_model.h5
-
-Evaluate model performance on a test dataset
-
-Predict tumor class from a single MRI image
-
-Simple GUI application to visualize predictions
-
-Organized and reproducible project structure
-
-📂 Project Structure
-Brain-Tumor-Detection/
-│
-├── train.py                 # Model training script
-├── evaluate.py              # Evaluate model performance
-├── predict.py               # Predict tumor from single image
-├── gui.py                   # Simple GUI for prediction
-│
-├── brain_tumor_model.h5     # Saved trained model
-│
-├── dataset/
-│   ├── Training/
-│   │   ├── glioma/
-│   │   ├── meningioma/
-│   │   ├── pituitary/
-│   │   └── notumor/
-│   │
-│   └── Testing/
-│       ├── glioma/
-│       ├── meningioma/
-│       ├── pituitary/
-│       └── notumor/
-│
-└── README.md
-🛠 Requirements
-
-Python 3.8+
-
-TensorFlow / Keras
-
-NumPy
-
-Scikit-learn
-
-OpenCV or Pillow
-
-Matplotlib
-
-Pandas
-
-⚙️ Installation
-
-Create and activate a virtual environment.
-
-Windows
+```bash
 python -m venv .venv
+# Windows PowerShell
 .\.venv\Scripts\Activate.ps1
-Install dependencies
 pip install --upgrade pip
-pip install tensorflow numpy scikit-learn opencv-python matplotlib pillow pandas
+pip install tensorflow numpy scikit-learn opencv-python matplotlib pillow
+```
 
-(Optional) Generate requirements file:
+If you prefer a `requirements.txt`, generate one after installing packages:
 
+```bash
 pip freeze > requirements.txt
-📊 Dataset Setup
+```
 
-Place MRI images in the following directory structure:
+**Quick Start**
 
-dataset/
-│
-├── Training/
-│   ├── glioma
-│   ├── meningioma
-│   ├── pituitary
-│   └── notumor
-│
-└── Testing/
-    ├── glioma
-    ├── meningioma
-    ├── pituitary
-    └── notumor
-🧠 Train the Model
+1) Prepare dataset
+
+Place image folders under `dataset/Training/` and `dataset/Testing/` using the class labels: `glioma`, `meningioma`, `notumor`, `pituitary`.
+
+2) Train
+
+```bash
 python train.py
+```
 
-After training, the model will be saved as:
+Training may produce a `brain_tumor_model.h5` file in the project root. Note: large model files are ignored by default in `.gitignore`.
 
-brain_tumor_model.h5
-📈 Evaluate the Model
+3) Evaluate
+
+```bash
 python evaluate.py
+```
 
-This script prints evaluation metrics such as:
+4) Predict (single image)
 
-Accuracy
-
-Precision
-
-Recall
-
-Confusion Matrix
-
-🔍 Predict from a Single Image
+```bash
 python predict.py --image path/to/image.jpg
+```
 
-Example:
+5) Run GUI
 
-python predict.py --image test.jpg
-🖥 Run the GUI
-
-Launch the simple graphical interface:
-
+```bash
 python gui.py
-
-The GUI allows you to:
-
-Upload an MRI image
-
-Run prediction
-
-View tumor classification
+```
 
 **Tips & Notes**
 - If you want to commit the trained model to the repository, remove the `*.h5` line from `.gitignore`.
