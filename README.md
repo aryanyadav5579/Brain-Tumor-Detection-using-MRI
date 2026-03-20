@@ -91,8 +91,9 @@ python gui.py
 | **Sansthita Dey** | 2305564 | Worked on **dataset preprocessing, data organization, and backend support for model training and testing**. Assisted with experimental evaluation. |
 | **Ishan Sinha** | 2305542 | Implemented **evaluation and prediction modules (`evaluate.py`, `predict.py`)**, and worked on performance metrics and experimental result analysis. |
 | **Shayank Gupta** | 2305569 | Developed the **frontend GUI (`gui.py`)** for uploading MRI images and displaying tumor predictions. Responsible for **project documentation and report preparation**, including methodology description, diagrams, and formatting of the final research report . |
-| **Adyasha Pattanaik** | 2305590 | Developed the **frontend GUI (`gui.py`)** for uploading MRI images and displaying tumor predictions. Responsible for **project documentation and report preparation**, including methodology description, diagrams, and formatting of the final research report. |
-                 |
+| **Adyasha Pattanaik** | 2305590 | GUI development, documentation, methodology & report formatting 
+
+                 
 
 
 **Author / Contact**
