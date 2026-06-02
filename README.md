@@ -88,7 +88,7 @@ python gui.py
 | Name | Roll No. | Contribution |
 |------|---------|-------------|
 | **Aryan Yadav** | 2305525 | Developed the CNN model architecture, implemented the training pipeline (train.py), performed dataset preprocessing, data organization, backend support for model training/testing, implemented evaluation and prediction modules (evaluate.py, predict.py), handled performance metrics and experimental analysis, and integrated the complete system. |
-| **Sansthita Dey** | 2305564 | Worked on **dataset preprocessing, data organization, and backend support for model training and testing**. Assisted with experimental evaluation. |
+| **Sansthita Dey** | 2305564 | Assisted with data organization, project documentation, and methodology preparation. Contributed to result compilation, presentation development, and the formatting of the final research report.. |
 | **Ishan Sinha** | 2305542 | Assisted with project review, testing, and documentation.. |
 | **Shayank Gupta** | 2305569 | Developed the **frontend GUI (`gui.py`)** for uploading MRI images and displaying tumor predictions. Responsible for **project documentation and report preparation**, including methodology description, diagrams, and formatting of the final research report . |
 | **Adyasha Pattanaik** | 2305590 | GUI development, documentation, methodology & report formatting 
